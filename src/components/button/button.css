@@ -7,6 +7,11 @@
   cursor: pointer;
   outline: none;
   border: 0;
+  transition: all ease-in-out 0.2s;
+}
+
+.button:hover {
+  background-color: #3e3e3e;
 }
 
 .button--ghost {
