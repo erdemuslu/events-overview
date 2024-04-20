@@ -30,4 +30,14 @@
   .monitor-events-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+
+    .monitor-events-header {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .monitor-events-actions {
+      margin-top: 1rem;
+    }
 }
