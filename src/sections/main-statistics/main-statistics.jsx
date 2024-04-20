@@ -1,21 +1,11 @@
-import { useMemo } from "react";
-
 import "./main-statistics.css";
 
 import { Box } from "../../components";
 import { mainBoxData, mainBoxInfo } from "../../constants";
+import { useTargetData } from "../../hooks";
 
 const MainStatistics = ({ type }) => {
-  const targetData = useMemo(
-    () =>
-      mainBoxInfo.map((item) => {
-        return {
-          ...item,
-          ...mainBoxData[item.type][type],
-        };
-      }),
-    [type]
-  );
+  const targetData = useTargetData(mainBoxInfo, mainBoxData, type);
 
   return (
     <div className="main-statitics">
@@ -25,10 +15,11 @@ const MainStatistics = ({ type }) => {
             key={item.value}
             Icon={item.Icon}
             label={item.label}
-            value={item.value}
+            pathIconVisible
             summaryPercantageValue={item.summaryPercantageValue}
             summaryType={item.summaryType}
             variant={`alt-${index + 1}`}
+            value={item.value}
           />
         );
       })}

@@ -1,0 +1,15 @@
+.top-events {
+  margin-block: 2rem;
+}
+
+.top-events-title {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.top-events-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}

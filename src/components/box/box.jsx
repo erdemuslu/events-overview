@@ -1,20 +1,24 @@
 import "./box.css";
 
-import { ActivityIcon, IncreaseIcon, InfoIcon, PathIcon } from "../icons";
+import { IncreaseIcon, InfoIcon, PathIcon } from "../icons";
 
 const Box = ({
   label,
   Icon,
-  value,
+  pathIconVisible,
+  progressValue,
   summaryPercantageValue,
   summaryType,
+  value,
   variant,
 }) => {
   return (
     <div className={`box${variant ? ` box--${variant}` : ""}`}>
-      <div className="box-icon">
-        <Icon />
-      </div>
+      {Icon && (
+        <div className="box-icon">
+          <Icon />
+        </div>
+      )}
       <div className="box-label">
         <p>{label}</p>
         <InfoIcon />
@@ -25,20 +29,37 @@ const Box = ({
         <p>{summaryPercantageValue}</p>
         <span>{summaryType}</span>
       </div>
-      <div className="box-path">
-        <PathIcon />
-      </div>
+      {progressValue && (
+        <div className="progress-wrapper">
+          <div className="progress-text">{progressValue}% of total</div>
+          <div className="progress-value">
+            <div
+              className="progress-value__inner"
+              style={{
+                width: `${progressValue}%`,
+              }}
+            />
+          </div>
+        </div>
+      )}
+      {pathIconVisible && (
+        <div className="box-path">
+          <PathIcon />
+        </div>
+      )}
     </div>
   );
 };
 
 Box.defaultProps = {
-  Icon: ActivityIcon,
+  Icon: null,
   label: "Total event count",
-  value: "349,260",
+  pathIconVisible: false,
+  progressValue: null,
   summaryPercantageValue: "30.3",
   summaryType: "in last 30 days",
   variant: "",
+  value: "349,260",
 };
 
 export default Box;
