@@ -95,6 +95,47 @@
   background-color: #0075FF;
 }
 
+.box-chart {
+  margin-top: 2rem;
+  position: relative;
+}
+
+.box-chart-yAxis {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 1.5rem);
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.box-chart-yAxis__bar {
+  width: 4px;
+  background-color: #0075FF;
+}
+
+.box-chart-xAxis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  font-size: .75rem;
+}
+
+.box-chart-xAxis__line {
+  display: flex;
+  align-items: flex-end;
+}
+
+.box-chart-xAxis__line > div {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #F6F6F6;
+}
+
 .box--alt-1 {
   background-color: #EAF7F0;
 }

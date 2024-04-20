@@ -26,6 +26,8 @@ const MonitorEvents = () => {
               summaryPercantageValue={item.summaryPercantageValue}
               summaryPercantageType={item.summaryPercantageType}
               value={item.value}
+              xAxisData={item.xAxisData}
+              yAxisData={item.yAxisData}
             />
           );
         })}

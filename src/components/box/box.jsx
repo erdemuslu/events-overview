@@ -12,6 +12,8 @@ const Box = ({
   summaryType,
   value,
   variant,
+  xAxisData,
+  yAxisData,
 }) => {
   return (
     <div className={`box${variant ? ` box--${variant}` : ""}`}>
@@ -47,6 +49,29 @@ const Box = ({
           </div>
         </div>
       )}
+      {xAxisData.length > 0 && yAxisData.length > 0 && (
+        <div className="box-chart">
+          <div className="box-chart-xAxis">
+            {yAxisData.map((item, index) => (
+              <div className="box-chart-xAxis__line" key={index}>
+                <div />
+                <p>{item}</p>
+              </div>
+            ))}
+          </div>
+          <div className="box-chart-yAxis">
+            {xAxisData.map((item, index) => (
+              <div
+                className="box-chart-yAxis__bar"
+                key={index}
+                style={{
+                  height: `${item}%`,
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      )}
       {pathIconVisible && (
         <div className="box-path">
           <PathIcon />
@@ -66,6 +91,8 @@ Box.defaultProps = {
   summaryType: "",
   variant: "",
   value: "349,260",
+  xAxisData: [],
+  yAxisData: [],
 };
 
 export default Box;
