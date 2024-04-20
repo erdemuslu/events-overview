@@ -7,7 +7,7 @@ const IncreaseIcon = (props) => (
     {...props}
   >
     <path
-      stroke="#22C55E"
+      stroke={props.color || "#22C55E"}
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={2}

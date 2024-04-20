@@ -18,3 +18,10 @@
   font-weight: 500;
   margin-right: .5rem;
 }
+
+.monitor-events-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  margin-top: 1rem;
+}

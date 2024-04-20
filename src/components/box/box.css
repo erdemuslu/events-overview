@@ -58,6 +58,19 @@
   color: #22C55E;
 }
 
+.box-summary--decrease svg {
+  transform: rotate(180deg);
+}
+
+.box-summary--decrease svg path {
+  stroke: #FD3535;
+}
+
+.box-summary--decrease p {
+  color: #FD3535;
+  margin-right: 0;
+}
+
 .progress-wrapper {
   margin-top: 1rem;
 }

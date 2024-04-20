@@ -7,6 +7,7 @@ const Box = ({
   Icon,
   pathIconVisible,
   progressValue,
+  summaryPercantageType,
   summaryPercantageValue,
   summaryType,
   value,
@@ -24,10 +25,14 @@ const Box = ({
         <InfoIcon />
       </div>
       <div className="box-value">{value}</div>
-      <div className="box-summary">
+      <div
+        className={`box-summary${
+          summaryPercantageType !== "increase" ? " box-summary--decrease" : ""
+        }`}
+      >
         <IncreaseIcon />
         <p>{summaryPercantageValue}</p>
-        <span>{`in ${summaryType.toLowerCase()}`}</span>
+        {summaryType && <span>{`in ${summaryType.toLowerCase()}`}</span>}
       </div>
       {progressValue && (
         <div className="progress-wrapper">
@@ -56,8 +61,9 @@ Box.defaultProps = {
   label: "Total event count",
   pathIconVisible: false,
   progressValue: null,
+  summaryPercantageType: "increase",
   summaryPercantageValue: "30.3",
-  summaryType: "last 30 days",
+  summaryType: "",
   variant: "",
   value: "349,260",
 };
