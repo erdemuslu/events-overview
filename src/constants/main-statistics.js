@@ -1,15 +1,20 @@
+import { ActivityIcon, UsersIcon, SessionIcon } from "../components/icons";
+
 export const mainBoxInfo = [
   {
+    Icon: ActivityIcon,
     label: "Total event count",
     type: "total-event",
     info: "lorem ipsum dolor sit amet",
   },
   {
+    Icon: UsersIcon,
     label: "Events per user",
     type: "events-per-user",
     info: "lorem ipsum dolor sit amet",
   },
   {
+    Icon: SessionIcon,
     label: "Events per session",
     type: "events-per-session",
     info: "lorem ipsum dolor sit amet",
@@ -45,7 +50,7 @@ export const mainBoxData = {
       summaryPercantageValue: 30.3,
     },
   },
-  "events-per-sessions": {
+  "events-per-session": {
     "last-30-days": {
       value: "32,5",
       summaryPercantageValue: 4.5,

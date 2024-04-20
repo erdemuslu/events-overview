@@ -4,6 +4,7 @@ import { ActivityIcon, IncreaseIcon, InfoIcon, PathIcon } from "../icons";
 
 const Box = ({
   label,
+  Icon,
   value,
   summaryPercantageValue,
   summaryType,
@@ -12,7 +13,7 @@ const Box = ({
   return (
     <div className={`box${variant ? ` box--${variant}` : ""}`}>
       <div className="box-icon">
-        <ActivityIcon />
+        <Icon />
       </div>
       <div className="box-label">
         <p>{label}</p>
@@ -32,6 +33,7 @@ const Box = ({
 };
 
 Box.defaultProps = {
+  Icon: ActivityIcon,
   label: "Total event count",
   value: "349,260",
   summaryPercantageValue: "30.3",
