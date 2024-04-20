@@ -2,7 +2,13 @@ import { useMemo, useState } from "react";
 
 import "./App.css";
 
-import { Header, MainStatistics, MonitorEvents, TopEvents } from "./sections";
+import {
+  EventMetrics,
+  Header,
+  MainStatistics,
+  MonitorEvents,
+  TopEvents,
+} from "./sections";
 import { headerFilterData } from "./constants";
 
 function App() {
@@ -20,6 +26,7 @@ function App() {
         type={headerFilterValue}
       />
       <TopEvents progressLabel={headerFilterLabel} type={headerFilterValue} />
+      <EventMetrics />
       <MonitorEvents />
     </div>
   );

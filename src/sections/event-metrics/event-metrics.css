@@ -1,0 +1,51 @@
+.event-metrics {
+  background-color: #FDFDFD;
+  border: 1px solid #EBEBEB;
+  border-radius: .5rem;
+}
+
+.event-metrics-action {
+  display: flex;
+  align-items: center;
+}
+
+.event-metrics-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.event-metrics-title {
+  display: flex;
+  align-items: center;
+}
+
+.event-metrics-title p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: .5rem;
+}
+
+.event-metrics-search {
+  position: relative;
+  margin-right: .5rem;
+}
+
+.event-metrics-search svg {
+  position: absolute;
+  top: 0.55rem;
+  left: 0.5rem;
+}
+
+.event-metrics-search input {
+  border-radius: .5rem;
+  background-color: #F2F2F2;
+  border: 1px solid #EBEBEB;
+  padding: .5rem 1rem .5rem 2rem;
+  font-size: 1rem;
+}
+
+.event-metrics-search input::placeholder {
+  color: #B0B0B0;
+}

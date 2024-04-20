@@ -8,3 +8,12 @@
   outline: none;
   border: 0;
 }
+
+.button--ghost {
+  background-color: transparent;
+  color: #000;
+}
+
+.button--ghost:hover {
+  background-color: #F2F2F2;
+}
