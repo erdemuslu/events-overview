@@ -5,6 +5,12 @@
   padding: 2rem;
 }
 
+@media screen and (min-width: 1280px) {
+  #root {
+    max-width: unset;
+  }
+}
+
 h1, h1, h3, h4, p {
   margin: 0;
   padding: 0;
