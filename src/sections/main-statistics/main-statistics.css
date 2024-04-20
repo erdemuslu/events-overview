@@ -4,3 +4,9 @@
   grid-gap: 1.5rem;
   margin-block: 2rem;
 }
+
+@media screen and (max-width: 940px) {
+  .main-statitics {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
