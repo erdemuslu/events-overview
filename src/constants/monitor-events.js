@@ -2,6 +2,7 @@ export const monitorEventsData = [
   {
     label: "period-change",
     type: "period-change",
+    info: "lorem ipsum dolor sit amet",
     value: "2,711",
     summaryPercantageValue: 6851.3,
     summaryPercantageType: "decrease",
@@ -15,6 +16,7 @@ export const monitorEventsData = [
   {
     label: "PING",
     type: "ping",
+    info: "lorem ipsum dolor sit amet",
     value: "274",
     summaryPercantageValue: "N/A",
     summaryPercantageType: "decrease",

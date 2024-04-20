@@ -18,6 +18,7 @@ const TopEvents = ({ progressLabel, type }) => {
             <Box
               key={index}
               label={item.label}
+              info={item.info}
               progressValue={item.progressValue}
               summaryPercantageValue={item.summaryPercantageValue}
               summaryType={progressLabel}

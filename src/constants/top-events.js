@@ -2,14 +2,17 @@ export const topEventsInfo = [
   {
     label: "period-change",
     type: "period-change",
+    info: "lorem ipsum dolor sit amet",
   },
   {
     label: "PING",
     type: "ping",
+    info: "lorem ipsum dolor sit amet",
   },
   {
     label: "cohort-create",
     type: "cohort-create",
+    info: "lorem ipsum dolor sit amet",
   },
 ];
 

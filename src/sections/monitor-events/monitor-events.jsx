@@ -1,7 +1,6 @@
 import "./monitor-events.css";
 
-import { InfoIcon } from "../../components/icons";
-import { Button, Box } from "../../components";
+import { Button, Box, InfoView } from "../../components";
 
 import { monitorEventsData } from "../../constants/monitor-events";
 
@@ -11,7 +10,7 @@ const MonitorEvents = () => {
       <div className="monitor-events-header">
         <div className="monitor-events-title">
           <p>Monitor Events</p>
-          <InfoIcon />
+          <InfoView desc="lorem ipsum dolor sit amet" />
         </div>
         <div className="monitor-events-actions">
           <Button>Configure events</Button>
@@ -23,6 +22,7 @@ const MonitorEvents = () => {
             <Box
               key={index}
               label={item.label}
+              info={item.info}
               summaryPercantageValue={item.summaryPercantageValue}
               summaryPercantageType={item.summaryPercantageType}
               value={item.value}

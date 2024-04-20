@@ -6,6 +6,7 @@ import InfoView from "../info-view/info-view";
 const Box = ({
   label,
   Icon,
+  info,
   pathIconVisible,
   progressValue,
   summaryPercantageType,
@@ -25,7 +26,7 @@ const Box = ({
       )}
       <div className="box-label">
         <p>{label}</p>
-        <InfoView desc="test" />
+        <InfoView desc={info} />
       </div>
       <div className="box-value">{value}</div>
       <div

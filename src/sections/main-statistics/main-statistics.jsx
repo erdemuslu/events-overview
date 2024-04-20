@@ -14,6 +14,7 @@ const MainStatistics = ({ progressLabel, type }) => {
           <Box
             key={index}
             Icon={item.Icon}
+            info={item.info}
             label={item.label}
             pathIconVisible
             summaryPercantageValue={item.summaryPercantageValue}

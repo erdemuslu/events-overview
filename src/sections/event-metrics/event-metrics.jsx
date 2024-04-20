@@ -10,6 +10,7 @@ const EventMetrics = () => {
     <div className="event-metrics">
       <DataTable
         header={eventMetricsHeader}
+        headerInfo="lorem ipsum dolor sit amet"
         data={eventMetricsData}
         title="Event Metrics"
       />

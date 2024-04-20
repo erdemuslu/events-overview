@@ -4,10 +4,10 @@ import "./data-table.css";
 
 import Button from "../button/button";
 import Select from "../select/select";
+import InfoView from "../info-view/info-view";
 import {
   DownloadIcon,
   FirstIcon,
-  InfoIcon,
   LastIcon,
   NextIcon,
   PrevIcon,
@@ -15,7 +15,7 @@ import {
   SortingIcon,
 } from "../icons";
 
-const DataTable = ({ header, data, title }) => {
+const DataTable = ({ header, headerInfo, data, title }) => {
   const [searchValue, setSearchValue] = useState("");
 
   const totalPage = Math.ceil(data.total / data.limit);
@@ -65,7 +65,7 @@ const DataTable = ({ header, data, title }) => {
       <div className="data-table-top">
         <div className="data-table-title">
           <p>{title}</p>
-          <InfoIcon />
+          <InfoView desc={headerInfo} />
         </div>
         <div className="data-table-action">
           <div className="data-table-search">
