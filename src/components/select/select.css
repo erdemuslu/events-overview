@@ -1,0 +1,29 @@
+.select-wrapper {
+  position: relative;
+}
+
+.select-arrow {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1rem;
+  top: 0;
+  width: auto;
+  height: 100%;
+  pointer-events: none;
+}
+
+.select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+  appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  background-color: #fff;
+  border: 1px solid #DADADA;
+  border-radius: .5rem;
+  padding: .5rem 2rem .5rem 1rem;
+  font-size: .875rem;
+}

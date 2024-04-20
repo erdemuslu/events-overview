@@ -1,7 +1,12 @@
 import "./App.css";
+import { Header } from "./sections";
 
 function App() {
-  return <div>test</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default App;
