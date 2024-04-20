@@ -1,11 +1,15 @@
 export { default as ActivityIcon } from "./activity";
 export { default as ArrowDownIcon } from "./arrow-down";
 export { default as DownloadIcon } from "./download";
-export { default as UsersIcon } from "./users";
+export { default as FirstIcon } from "./first";
 export { default as IncreaseIcon } from "./increase";
 export { default as InfoIcon } from "./info";
+export { default as LastIcon } from "./last";
 export { default as LastUpdateIcon } from "./last-update";
+export { default as NextIcon } from "./next";
 export { default as PathIcon } from "./path";
+export { default as PrevIcon } from "./prev";
 export { default as SearchIcon } from "./search";
 export { default as SessionIcon } from "./session";
 export { default as SortingIcon } from "./sorting";
+export { default as UsersIcon } from "./users";

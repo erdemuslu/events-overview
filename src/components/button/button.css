@@ -22,3 +22,8 @@
 .button--ghost:hover {
   background-color: #F2F2F2;
 }
+
+.button[disabled] {
+  opacity: .32;
+  pointer-events: none;
+}

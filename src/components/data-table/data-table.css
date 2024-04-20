@@ -1,3 +1,7 @@
+.data-table {
+  font-size: .875rem;
+}
+
 .data-table-action {
   display: flex;
   align-items: center;
@@ -47,7 +51,9 @@
 .data-table-header {
   display: grid;
   padding-inline: 2rem;
+  padding-bottom: .5rem;
   margin-bottom: 1rem;
+  border-bottom: 1px solid #EBEBEB;
 }
 
 .data-table-header button {
@@ -75,4 +81,81 @@
 
 .data-table-row:hover {
   background-color: #F2FAFF;
+}
+
+.data-table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  margin-top: .5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #EBEBEB;
+}
+
+.data-table-footer-left, .data-table-footer-right {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+@media screen and (max-width: 940px) {
+  .data-table-top {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem 2rem 1rem 2rem;
+  }
+
+  .data-table-title {
+    margin-bottom: 1rem;
+  }
+
+  .data-table-header {
+    display: none;
+  }
+
+  .data-table-row {
+    display: flex;
+    flex-direction: column;
+    background-color: #EBEBEB;
+    border-radius: .5rem;
+    padding: 0 1rem;
+    margin: 1rem;
+  }
+
+  .data-table-row:hover {
+    background-color: #EBEBEB;
+  }
+
+  .data-table-row p {
+    display: flex;
+    flex-direction: column;
+    margin-block: 1rem;
+  }
+
+  .data-table-row p:before {
+    content: attr(data-label);
+    font-weight: 600;
+    margin-bottom: .25rem;
+  }
+
+  .data-table-footer {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .data-table-footer-right {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .data-table-navigation {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
 }
