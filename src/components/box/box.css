@@ -116,6 +116,12 @@
   background-color: #0075FF;
 }
 
+@media screen and (min-width: 1480px) {
+  .box-chart-yAxis__bar {
+    width: 12px;
+  }
+}
+
 .box-chart-xAxis {
   display: flex;
   flex-direction: column;
