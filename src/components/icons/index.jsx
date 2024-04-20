@@ -8,3 +8,4 @@ export { default as LastUpdateIcon } from "./last-update";
 export { default as PathIcon } from "./path";
 export { default as SearchIcon } from "./search";
 export { default as SessionIcon } from "./session";
+export { default as SortingIcon } from "./sorting";

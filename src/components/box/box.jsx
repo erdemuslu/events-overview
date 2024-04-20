@@ -33,7 +33,7 @@ const Box = ({
         }`}
       >
         <IncreaseIcon />
-        <p>{summaryPercantageValue}</p>
+        <p>%{summaryPercantageValue}</p>
         {summaryType && <span>{`in ${summaryType.toLowerCase()}`}</span>}
       </div>
       {progressValue && (
