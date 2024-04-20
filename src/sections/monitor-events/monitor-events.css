@@ -1,0 +1,20 @@
+.monitor-events {
+  margin-block: 2rem;
+}
+
+.monitor-events-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monitor-events-title {
+  display: flex;
+  align-items: center;
+}
+
+.monitor-events-title p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: .5rem;
+}

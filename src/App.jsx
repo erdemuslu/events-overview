@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 
 import "./App.css";
 
-import { Header, MainStatistics, TopEvents } from "./sections";
+import { Header, MainStatistics, MonitorEvents, TopEvents } from "./sections";
 import { headerFilterData } from "./constants";
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         type={headerFilterValue}
       />
       <TopEvents progressLabel={headerFilterLabel} type={headerFilterValue} />
+      <MonitorEvents />
     </div>
   );
 }
