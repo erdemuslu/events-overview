@@ -72,7 +72,11 @@ const DataTable = ({ header, data, title }) => {
             <div className="data-table-search__icon">
               <SearchIcon />
             </div>
-            <input type="text" placeholder="Search" onChange={onSearchChange} />
+            <input
+              type="text"
+              placeholder="Type event name"
+              onChange={onSearchChange}
+            />
           </div>
           <Button variant="ghost" onClick={onDownload}>
             <DownloadIcon />

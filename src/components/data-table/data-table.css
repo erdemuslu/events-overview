@@ -41,6 +41,7 @@
 }
 
 .data-table-search input {
+  width: 100%;
   border-radius: .5rem;
   background-color: #F2F2F2;
   border: 1px solid #EBEBEB;
@@ -119,13 +120,25 @@
     display: none;
   }
 
+  .data-table-action {
+    width: 100%;
+  }
+
+  .data-table-search {
+    width: calc(100% - 4rem);
+  }
+
+  .data-table-action button {
+    position: relative;
+  }
+
   .data-table-row {
     display: flex;
     flex-direction: column;
     background-color: #EBEBEB;
     border-radius: .5rem;
     padding: 0 1rem;
-    margin: 1rem;
+    margin: 1rem 2rem;
   }
 
   .data-table-row:hover {
