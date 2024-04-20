@@ -1,6 +1,7 @@
 import "./box.css";
 
-import { IncreaseIcon, InfoIcon, PathIcon } from "../icons";
+import { IncreaseIcon, PathIcon } from "../icons";
+import InfoView from "../info-view/info-view";
 
 const Box = ({
   label,
@@ -24,7 +25,7 @@ const Box = ({
       )}
       <div className="box-label">
         <p>{label}</p>
-        <InfoIcon />
+        <InfoView desc="test" />
       </div>
       <div className="box-value">{value}</div>
       <div
