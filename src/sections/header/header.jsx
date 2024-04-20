@@ -5,7 +5,7 @@ import { Select } from "../../components";
 
 import { headerFilterData } from "../../constants";
 
-const header = () => {
+const header = ({ onFilterChange }) => {
   return (
     <header className="header">
       <div className="header-left">
@@ -20,7 +20,7 @@ const header = () => {
           name="main-data"
           options={headerFilterData}
           onChange={(e) => {
-            console.log(e.target.value);
+            onFilterChange(e.target.value);
           }}
         />
       </div>

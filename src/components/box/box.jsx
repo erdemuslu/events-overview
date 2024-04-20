@@ -27,7 +27,7 @@ const Box = ({
       <div className="box-summary">
         <IncreaseIcon />
         <p>{summaryPercantageValue}</p>
-        <span>{summaryType}</span>
+        <span>{`in ${summaryType.toLowerCase()}`}</span>
       </div>
       {progressValue && (
         <div className="progress-wrapper">
@@ -57,7 +57,7 @@ Box.defaultProps = {
   pathIconVisible: false,
   progressValue: null,
   summaryPercantageValue: "30.3",
-  summaryType: "in last 30 days",
+  summaryType: "last 30 days",
   variant: "",
   value: "349,260",
 };

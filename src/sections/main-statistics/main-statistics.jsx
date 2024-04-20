@@ -4,7 +4,7 @@ import { Box } from "../../components";
 import { mainBoxData, mainBoxInfo } from "../../constants";
 import { useTargetData } from "../../hooks";
 
-const MainStatistics = ({ type }) => {
+const MainStatistics = ({ progressLabel, type }) => {
   const targetData = useTargetData(mainBoxInfo, mainBoxData, type);
 
   return (
@@ -12,12 +12,12 @@ const MainStatistics = ({ type }) => {
       {targetData.map((item, index) => {
         return (
           <Box
-            key={item.value}
+            key={index}
             Icon={item.Icon}
             label={item.label}
             pathIconVisible
             summaryPercantageValue={item.summaryPercantageValue}
-            summaryType={item.summaryType}
+            summaryType={progressLabel}
             variant={`alt-${index + 1}`}
             value={item.value}
           />

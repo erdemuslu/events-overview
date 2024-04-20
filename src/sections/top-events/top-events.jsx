@@ -4,7 +4,7 @@ import { useTargetData } from "../../hooks";
 import { topEventsInfo, topEventsData } from "../../constants";
 import { Box } from "../../components";
 
-const TopEvents = ({ type }) => {
+const TopEvents = ({ progressLabel, type }) => {
   const targetData = useTargetData(topEventsInfo, topEventsData, type);
 
   return (
@@ -13,14 +13,14 @@ const TopEvents = ({ type }) => {
         Top events by count in the last 30 days
       </div>
       <div className="top-events-wrapper">
-        {targetData.map((item) => {
+        {targetData.map((item, index) => {
           return (
             <Box
-              key={item.value}
+              key={index}
               label={item.label}
               progressValue={item.progressValue}
               summaryPercantageValue={item.summaryPercantageValue}
-              summaryType={item.summaryType}
+              summaryType={progressLabel}
               value={item.value}
             />
           );
