@@ -1,10 +1,11 @@
 import "./App.css";
-import { Header } from "./sections";
+import { Header, MainStatistics } from "./sections";
 
 function App() {
   return (
     <div>
       <Header />
+      <MainStatistics />
     </div>
   );
 }

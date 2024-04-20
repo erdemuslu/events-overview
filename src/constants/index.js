@@ -1,1 +1,1 @@
-export { default as headerFilterData } from "./header";
+export { headerFilterData as headerFilterData } from "./header";
