@@ -69,7 +69,9 @@ const DataTable = ({ header, data, title }) => {
         </div>
         <div className="data-table-action">
           <div className="data-table-search">
-            <SearchIcon />
+            <div className="data-table-search__icon">
+              <SearchIcon />
+            </div>
             <input type="text" placeholder="Search" onChange={onSearchChange} />
           </div>
           <Button variant="ghost" onClick={onDownload}>
