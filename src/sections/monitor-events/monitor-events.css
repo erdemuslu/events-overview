@@ -26,6 +26,26 @@
   margin-top: 1rem;
 }
 
+.monitor-events-actions {
+  display: flex;
+  align-items: center;
+}
+
+.monitor-events-date {
+  margin-right: 1rem;
+}
+
+.monitor-events-date input {
+  min-width: 13rem;
+  margin: 0;
+  background-color: #fff;
+  border: 1px solid #DADADA;
+  border-radius: .5rem;
+  padding: .5rem 0;
+  font-size: .875rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 940px) {
   .monitor-events-wrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -39,5 +59,13 @@
   
     .monitor-events-actions {
       margin-top: 1rem;
+    }
+
+    .monitor-events-date {
+      align-self: stretch;
+    }
+
+    .react-datepicker-wrapper, .react-datepicker__input-container, .react-datepicker__input-container input {
+      height: 100%;
     }
 }
